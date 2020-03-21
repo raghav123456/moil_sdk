@@ -8,6 +8,8 @@ MOIL SDK is collection of functions support c++ developments for fisheye image a
 
 ## 1. Development environment
 
+
+
 For RaspberryPi, please download Raspbian opetating system image :
 https://www.raspberrypi.org/downloads/raspbian/
 following the installing steps : 
@@ -71,7 +73,12 @@ https://oranwind.org/-raspberry-pi-win32-disk-imager-shao-lu-sd-qia-jiao-xue/
         2592, 1944, 4.05,
         0, 0, 0, 0, -47.96, 222.86
         );
-
+	
+    md->Config("car", 1.4, 1.4,   //this is for t265
+        1320.0, 1017.0, 1.048,
+        2592, 1944, 4.05,
+        0, 0, 0, 0, -47.96, 222.86
+        );
 #### 3.2 AnypointM     
 
     C++ : double AnyPointM(float *mapX, float *mapY, int w, int h, double alphaOffset, double betaOffset,
